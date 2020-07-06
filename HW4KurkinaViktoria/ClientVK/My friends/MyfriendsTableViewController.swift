@@ -13,7 +13,7 @@ class MyfriendsTableViewController: UITableViewController {
     var friends: [String] = []
     var sections: [String] = []
     
-    @IBOutlet weak var myFriendsView: MyFriendsView!
+    @IBOutlet weak var MyFriendsHeaderView: MyFriendsHeaderView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -56,11 +56,12 @@ class MyfriendsTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let view = tableView.dequeueReusableHeaderFooterView(withIdentifier: "MyFriendsHeader") as! MyFriendsView
 
-        view.myFriendsView?.UiView = itemsInSection(indexPath.section)[indexPath.row]
-        
-        return sections[section]
+    let view = tableView.dequeueReusableHeaderFooterView(withIdentifier: "MyFriendsHeader") as! MyFriendsHeaderView
+    view.letterLabel?.text = itemsInSection(indexPath.section)[indexPath.row]
+    
+    return sections[section]
+    
     }
     
 }

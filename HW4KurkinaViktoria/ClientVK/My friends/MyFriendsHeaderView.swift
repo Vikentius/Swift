@@ -8,8 +8,11 @@
 
 import UIKit
 
-final class MyFriendsView: UIView {
+final class MyFriendsHeaderView: UIView {
 
+    @IBOutlet weak var letterLabel: UILabel!
+
+    
     // MARK: - Init
     
     override init(frame: CGRect) {

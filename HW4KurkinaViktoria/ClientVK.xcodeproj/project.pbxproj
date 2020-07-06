@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7805C4EA24A9314200CCB1D8 /* Likecontrol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7805C4E924A9314200CCB1D8 /* Likecontrol.swift */; };
-		78272E6924B2873A00D764CD /* MyFriendsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78272E6824B2873A00D764CD /* MyFriendsView.swift */; };
+		78272E6924B2873A00D764CD /* MyFriendsHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78272E6824B2873A00D764CD /* MyFriendsHeaderView.swift */; };
 		783EE3E8249FA0210010B813 /* AllGroupsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783EE3E7249FA0210010B813 /* AllGroupsTableViewController.swift */; };
 		783EE3EA249FA18A0010B813 /* AllGroupsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783EE3E9249FA18A0010B813 /* AllGroupsCell.swift */; };
 		783EE3F0249FA8530010B813 /* MyGroupsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783EE3EF249FA8530010B813 /* MyGroupsTableViewController.swift */; };
@@ -46,7 +46,7 @@
 
 /* Begin PBXFileReference section */
 		7805C4E924A9314200CCB1D8 /* Likecontrol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Likecontrol.swift; sourceTree = "<group>"; };
-		78272E6824B2873A00D764CD /* MyFriendsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFriendsView.swift; sourceTree = "<group>"; };
+		78272E6824B2873A00D764CD /* MyFriendsHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFriendsHeaderView.swift; sourceTree = "<group>"; };
 		783EE3E7249FA0210010B813 /* AllGroupsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllGroupsTableViewController.swift; sourceTree = "<group>"; };
 		783EE3E9249FA18A0010B813 /* AllGroupsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllGroupsCell.swift; sourceTree = "<group>"; };
 		783EE3EF249FA8530010B813 /* MyGroupsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGroupsTableViewController.swift; sourceTree = "<group>"; };
@@ -119,7 +119,7 @@
 			children = (
 				783EE3F924A0D5BC0010B813 /* MyfriendsTableViewCell.swift */,
 				783EE3F724A0D4130010B813 /* MyfriendsTableViewController.swift */,
-				78272E6824B2873A00D764CD /* MyFriendsView.swift */,
+				78272E6824B2873A00D764CD /* MyFriendsHeaderView.swift */,
 				78F16D8824B240AB005C7274 /* Lorem.swift */,
 			);
 			path = "My friends";
@@ -324,7 +324,7 @@
 				78D7FF6624969EBB00D4D89E /* LoginViewController.swift in Sources */,
 				7805C4EA24A9314200CCB1D8 /* Likecontrol.swift in Sources */,
 				78D7FF6224969EBB00D4D89E /* AppDelegate.swift in Sources */,
-				78272E6924B2873A00D764CD /* MyFriendsView.swift in Sources */,
+				78272E6924B2873A00D764CD /* MyFriendsHeaderView.swift in Sources */,
 				783EE3F424A0CF630010B813 /* PhotoCollectionViewController.swift in Sources */,
 				783EE3F0249FA8530010B813 /* MyGroupsTableViewController.swift in Sources */,
 				783EE3F624A0D0AA0010B813 /* PhotoCell.swift in Sources */,

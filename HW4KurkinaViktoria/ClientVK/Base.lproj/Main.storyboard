@@ -164,10 +164,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <view key="tableHeaderView" contentMode="scaleToFill" id="5ip-K0-rkX" customClass="MyFriendsHeader">
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="5ip-K0-rkX" customClass="MyFriendsHeaderView" customModule="ClientVK" customModuleProvider="target">
                             <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ERK-3n-yI9">
+                                    <rect key="frame" x="56" y="9" width="302" height="26"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
                             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <constraints>
+                                <constraint firstItem="ERK-3n-yI9" firstAttribute="centerY" secondItem="5ip-K0-rkX" secondAttribute="centerY" id="b3n-fc-s8t"/>
+                                <constraint firstItem="ERK-3n-yI9" firstAttribute="leading" secondItem="5ip-K0-rkX" secondAttribute="leading" constant="56" id="gBf-Tc-mbu"/>
+                                <constraint firstItem="ERK-3n-yI9" firstAttribute="centerX" secondItem="5ip-K0-rkX" secondAttribute="centerX" id="wpO-WJ-JLU"/>
+                            </constraints>
+                            <connections>
+                                <outlet property="letterLabel" destination="ERK-3n-yI9" id="iHH-0r-fAa"/>
+                            </connections>
                         </view>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MyfriendsCell" id="jHP-8W-BGA" customClass="MyfriendsTableViewCell" customModule="ClientVK" customModuleProvider="target">
@@ -224,6 +240,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Мои друзья" id="hbD-Xp-y7Z"/>
+                    <connections>
+                        <outlet property="MyFriendsHeaderView" destination="5ip-K0-rkX" id="Owy-O8-KlA"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J2a-o7-b0d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
