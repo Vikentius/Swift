@@ -8,12 +8,14 @@
 
 import UIKit
 
-class MyfriendsTableViewController: UITableViewController {
+class MyfriendsTableViewController: UITableViewController, UISearchBarDelegate {
     
     var friends: [String] = []
+    var filteredFriends: [String] = []
     var sections: [String] = []
     
     @IBOutlet weak var MyFriendsHeaderView: MyFriendsHeaderView!
+    @IBOutlet weak var searchBar: UISearchBar!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,7 +38,7 @@ class MyfriendsTableViewController: UITableViewController {
     
     func itemsInSection(_ section: Int) -> [String] {
         let letter = sections[section]
-        return friends.filter { $0.hasPrefix(letter) }
+        return filteredFriends.filter { $0.hasPrefix(letter) }
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -62,6 +64,15 @@ class MyfriendsTableViewController: UITableViewController {
     
     return sections[section]
     
+    }
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        if searchText.isEmpty {
+            filteredFriends = friends
+        } else {
+            filteredFriends = Lorem.filter { $0.fullName.lowercased().contains(searchText.lowercased()) }
+        }
+        tableView.reloadData()
     }
     
 }
